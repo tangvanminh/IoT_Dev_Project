@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/logobk"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="IOT DEMO"
+            android:gravity="center"
+            android:textColor="#f00"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Nhiệt Độ"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#f00"
+                android:gravity="bottom|center"
+                />
+            <TextView
+                android:id="@+id/txtTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="28°C"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#f00"
+                android:gravity="top|center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation = "vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Độ ẩm"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:gravity="bottom|center"
+                />
+            <TextView
+                android:id="@+id/txtHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="76%"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:gravity="top|center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation = "horizontal">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:text="Quạt"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLED"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="20dp"
+            android:textColor="#00f"
+            app:textOn="BẬT"
+            app:textOff="TẮT"
+            app:on="false"
+            app:colorBorder="@color/colorAccent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation = "horizontal">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:text="Bơm"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnPUMP"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="20dp"
+            android:textColor="#00f"
+            app:textOn="BẬT"
+            app:textOff="TẮT"
+            app:on="false"
+            app:colorBorder="@color/colorAccent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="GVHD:"
+            android:gravity="start"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:background="#0f0f0f"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text=" Huỳnh Hoàng Kha \n Lê Trọng Nhân"
+            android:gravity="start"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:background="#0f0f0f"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Thành viên:"
+            android:gravity="start"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:background="#0f0f0f"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Tăng Văn Minh\nTrần Đoàn Đức Huy\nTrần Nam Tiến"
+            android:gravity="start"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:background="#0f0f0f"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
